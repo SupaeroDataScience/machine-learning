@@ -1,0 +1,41 @@
+site_name: Supervised and Unsupervised Learning
+site_description: Supervised and Unsupervised Learning section of the Algorithms in Machine Learning class at ISAE-Supaero
+site_url: https://supaerodatascience.github.io/machine-learning/
+site_dir: site
+strict: false
+use_directory_urls: false
+
+theme:
+  name: 'material'
+  palette:
+    primary: light blue
+    accent: light blue
+  logo: 'https://raw.githubusercontent.com/SupaeroDataScience/machine-learning/main/src/favicon.ico'
+  favicon: 'https://raw.githubusercontent.com/SupaeroDataScience/machine-learning/main/src/favicon.ico'
+  features:
+    - toc.autohide
+
+repo_name: SupaeroDataScience/machine-learning
+repo_url: https://github.com/SupaeroDataScience/machine-learning
+
+nav:
+- Introduction to ML: intro.md
+- A quick tour of Unsupervised Learning: unsup.md
+- The importance of data preprocessing: preproc.md
+- SVMs, the bias-variance tradeoff and a bit of kernel theory: svm.md
+- An application of SVMs to multi-label classification: mlc.md
+
+markdown_extensions:
+- markdown.extensions.codehilite:
+    guess_lang: false
+- toc:
+    permalink: 🔗
+- admonition
+- codehilite
+- extra
+- attr_list
+- pymdownx.details
+- pymdownx.superfences
+
+plugins:
+- search
