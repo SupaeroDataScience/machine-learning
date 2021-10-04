@@ -9,8 +9,7 @@ deploy:
 	git checkout main
 	mkdocs gh-deploy
 	git checkout gh-pages
-	git add ../slides
-	git commit -m 'reveal update'
+	git commit -m 'website update'
 	git push origin gh-pages
 	git checkout main
 
