@@ -1,0 +1,57 @@
+\documentclass{beamer}
+
+\mode<presentation>
+{
+\usetheme{Copenhagen}
+%\usetheme{Boadilla}
+%\usecolortheme{seahorse}
+%\useoutertheme{infolines}
+%\useoutertheme[compress]{miniframes}
+%\setbeamercovered{transparent}
+}
+
+%% \mode<presentation>
+%% {
+%% \usetheme{progressbar}
+%% \setbeamercovered{transparent}
+%% }
+
+%\usepackage[english]{babel}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{times}
+\usepackage{xspace}
+\usepackage{amssymb,amsmath}
+
+\title{SVMs and kernels}
+
+\author{E. Rachelson}
+
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{footline}[frame number]
+
+\begin{document}
+
+\begin{frame}{A geometrical approach to ML}
+\begin{block}{}
+\begin{enumerate}
+\item Draw a line that sits as far as possible from the data points $\rightarrow$ Support Vector Machines
+\item Send all data points in a higher dimension space where they are linearly separable $\rightarrow$ kernel trick
+\end{enumerate}
+$\Rightarrow$ SVM + kernel trick = Find the optimal separating hyperplane in this higher dimension space, without ever computing the mapping.
+\end{block}
+
+\begin{itemize}
+\item SVM try to separate data by maximizing a geometrical margin
+\item They are computed offline
+\item They offer a sparse, robust to class imbalance, and easy to evaluate predictor
+\item Kernels are a way of enriching (lifting) the data representation so that it becomes linearly separable
+\item SVMs + kernels offer a versatile method for classification, regression and density estimation
+\item \href{http://scikit-learn.org/stable/modules/svm.html}{[Link] to documentation in scikit-learn}
+\end{itemize}
+\end{frame}
+
+\end{document}
