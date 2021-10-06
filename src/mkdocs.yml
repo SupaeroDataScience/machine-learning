@@ -24,6 +24,16 @@ nav:
 - The importance of data preprocessing: preproc.md
 - SVMs, the bias-variance tradeoff and a bit of kernel theory: svm.md
 - An application of SVMs to multi-label classification: mlc.md
+- Naive Bayes Classification: nbc.md
+- Gaussian Processes: gp.md
+- Surrogate Modeling and Bayesian Optimization: surrog.md
+- Decision trees: trees.md
+- Boosting: boost.md
+- Gradient Boosting and XGBoost: xgboost.md
+- Bagging: bagging.md
+- Random Forests: rf.md
+- Anomaly Detection: anomaly.md
+- Explainability in ML: xai.md
 
 markdown_extensions:
 - markdown.extensions.codehilite:
