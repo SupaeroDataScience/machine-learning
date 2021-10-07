@@ -7,7 +7,7 @@ This is the Supervised and Unsupervised Learning section of the [Algorithms in M
 ## Syllabus
 
 This course offers a discovery of the landscape of Machine Learning through some key algorithms.  
-It follows the [Introduction to Statistical Learning part](https://supaerodatascience.github.io) and will be followed by the [Neural Networks and Deep Learning part](https://supaerodatascience.github.io/deep-learning/).
+It follows the [Statistical Foundations of Machine Learning part](https://supaerodatascience.github.io/stat-ml) and will be followed by the [Neural Networks and Deep Learning part](https://supaerodatascience.github.io/deep-learning/).
 
 Over 25 hours, we will cover the landscape of Supervised and Unsupervised Machine Learning by taking four different points of view and formalisms: the geometrical perspective, the probabilistic (Bayesian) perspective, the connectionnist perspective (which we will postpone to the next class on Deep Learning), and the ensemble perspective.  
 The class is organized in 9 sessions:  
