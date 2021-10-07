@@ -1,6 +1,6 @@
 site_name: Supervised and Unsupervised Machine Learning
 site_description: Supervised and Unsupervised Learning section of the Algorithms in Machine Learning class at ISAE-Supaero
-site_url: https://supaerodatascience.github.io/
+site_url: https://supaerodatascience.github.io/machine-learning/
 site_dir: site
 strict: false
 use_directory_urls: false
