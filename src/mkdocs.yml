@@ -1,6 +1,6 @@
 site_name: Supervised and Unsupervised Machine Learning
 site_description: Supervised and Unsupervised Learning section of the Algorithms in Machine Learning class at ISAE-Supaero
-site_url: https://supaerodatascience.github.io/machine-learning/
+site_url: https://supaerodatascience.github.io/
 site_dir: site
 strict: false
 use_directory_urls: false
@@ -19,6 +19,7 @@ repo_name: SupaeroDataScience/machine-learning
 repo_url: https://github.com/SupaeroDataScience/machine-learning
 
 nav:
+- Home: index.md
 - Introduction:
   - Introduction to ML: intro.md
   - A quick tour of Unsupervised Learning: unsup.md
@@ -30,7 +31,7 @@ nav:
   - Naive Bayes Classification: nbc.md
   - Gaussian Processes: gp.md
   - Surrogate Modeling and Bayesian Optimization: surrog.md
-- Mimicking the human brain, the connectionnist approach:
+- Mimicking the human brain, the connectionist approach:
   - Neural networks: nn.md
 - Commitee-based methods:
   - Decision trees: trees.md
