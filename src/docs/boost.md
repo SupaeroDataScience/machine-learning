@@ -9,4 +9,4 @@ This class TODO
 
 ## References
 
-(The Boosting Approach to Machine Learning An Overview. R. E. Schapire. MSRI workshop on Nonlinear Estimation and Classification, (2002).)[https://www.cs.princeton.edu/courses/archive/spr07/cos424/papers/boosting-survey.pdf]
+[The Boosting Approach to Machine Learning An Overview. R. E. Schapire. MSRI workshop on Nonlinear Estimation and Classification, (2002).](https://www.cs.princeton.edu/courses/archive/spr07/cos424/papers/boosting-survey.pdf)
