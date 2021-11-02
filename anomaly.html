@@ -14,7 +14,7 @@
         <link rel="canonical" href="https://supaerodatascience.github.io/machine-learning/anomaly.html">
       
       <link rel="icon" href="https://raw.githubusercontent.com/SupaeroDataScience/machine-learning/main/src/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.3">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.1">
     
     
       
@@ -22,7 +22,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.5143246d.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.1c75ef36.min.css">
       
         
         <link rel="stylesheet" href="assets/stylesheets/palette.3f5d1f46.min.css">
@@ -596,9 +596,39 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Anomaly Detection
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="anomaly.html" class="md-nav__link md-nav__link--active">
         Anomaly Detection
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-for-local-installation" class="md-nav__link">
+    Requirements for local installation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -678,6 +708,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-for-local-installation" class="md-nav__link">
+    Requirements for local installation
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -694,6 +739,37 @@
                 
                 
                 <h1 id="anomaly-detection">Anomaly detection<a class="headerlink" href="#anomaly-detection" title="Permanent link">🔗</a></h1>
+<ul>
+<li><a href="https://supaerodatascience.github.io/machine-learning/">Home</a></li>
+<li><a href="https://github.com/SupaeroDataScience/machine-learning/">Github repository</a></li>
+</ul>
+<p>This class introduces the problem framing and methodology of Anomaly Detection. It illustrates why classical supervised ML algorithms are not suitable for such problems, and provides new approaches with outlier detection and novelty detection. You will discover, by alternating theory and practice exercises, the major algorithms, principles and warning signs for such tasks, including One-Class SVMs, Local Outlier Factor or Isolation Forest. You will also discover semi-supervised approaches where the error of supervised learning models can turn into anomaly scores.
+At the end, a practical use case with anonymized aircraft sensor data is proposed, where you will have to develop the whole methodology without guidance. It will help you reflect on the main stakes and warning points of such tasks, to prepare you to address customers in your professional life.</p>
+<p><a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/13%20-%20Anomaly%20Detection/anomaly_detection_class.pdf">Lecture notes</a><br />
+<a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/13%20-%20Anomaly%20Detection/anomaly_detection_class-empty.ipynb">Notebook for class exercises</a> (<a href="https://colab.research.google.com/github/SupaeroDataScience/machine-learning/blob/main/13%20-%20Anomaly%20Detection/anomaly_detection_class-empty.ipynb">colab</a>)<br />
+<a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/13%20-%20Anomaly%20Detection/anomaly_detection_class.ipynb">Solutions</a> (<a href="https://colab.research.google.com/github/SupaeroDataScience/machine-learning/blob/main/13%20-%20Anomaly%20Detection/anomaly_detection_class.ipynb">colab</a>)</p>
+<p><a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/13%20-%20Anomaly%20Detection/anomaly_detection_exercise.pdf">Practical use case instructions</a><br />
+<a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/13%20-%20Anomaly%20Detection/data/dataset.csv">Data for use case</a></p>
+<h2 id="requirements-for-local-installation">Requirements for local installation<a class="headerlink" href="#requirements-for-local-installation" title="Permanent link">🔗</a></h2>
+<p>To setup the Anaconda environment with required dependencies, execute the following instructions in Anaconda prompt or Linux shell.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Clone this github repository on your machine</span>
+git clone https://github.com/jfabrice/ml-class-anomaly-detection.git
+
+<span class="c1"># Change working directory inside the repo</span>
+<span class="nb">cd</span> ml-class-anomaly-detection
+
+<span class="c1"># Create a new virtual environment</span>
+conda create -n anomalydetectionenv <span class="nv">python</span><span class="o">==</span><span class="m">3</span>.6
+
+<span class="c1"># Activate the environment</span>
+<span class="c1">## For Linux / MAC</span>
+<span class="nb">source</span> activate anomalydetectionenv
+<span class="c1">## For Windows</span>
+activate anomalydetectionenv
+
+<span class="c1"># Install the requirements</span>
+pip install -r requirements.txt
+</code></pre></div>
                 
               
               
@@ -766,10 +842,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": ["toc.autohide"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["toc.autohide"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.e99e714c.min.js", "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.f89c2efe.min.js"></script>
+      <script src="assets/javascripts/bundle.c7d1b464.min.js"></script>
       
     
   </body>
