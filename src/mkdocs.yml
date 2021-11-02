@@ -36,7 +36,7 @@ nav:
 - Commitee-based methods:
   - Decision trees: trees.md
   - Boosting: boost.md
-  - Gradient Boosting and XGBoost: xgboost.md
+  - XGBoost: xgboost.md
   - Bagging: bagging.md
   - Random Forests: rf.md
   - Anomaly Detection: anomaly.md
