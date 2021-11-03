@@ -36,3 +36,15 @@ activate anomalydetectionenv
 # Install the requirements
 pip install -r requirements.txt
 ```
+
+## References
+
+**A Fast Algorithm for the Minimum Covariance Determinant Estimator.**  
+P. J. Rousseeuw, and K. V. Driessen. Technometrics, **41**(3), 212-223, (1999).  
+**Estimating the support of a high-dimensional distribution.**  
+B. Schölkopf, J. C. Platt, J. Shawe-Taylor, A. J. Smola, and R. C. Williamson. Neural computation, **13**(7), 1443-1471, (2001).  
+**Isolation-based anomaly detection.**  
+F. T. Liu, K. M. Ting, and Z. H. Zhou. ACM Transactions on Knowledge Discovery from Data, **6**(1), 1-39, (2012).  
+**LOF: identifying density-based local outliers.**  
+M. M. Breunig, H. P. Kriegel, R. T. Ng, and J. Sander. In ACM SIGMOD International Conference on Management of Data, 93-104, (2000).  
+
