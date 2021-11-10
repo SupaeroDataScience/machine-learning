@@ -5,8 +5,8 @@
 
 In this class, we will introduce Random Forest as a new boosting machine algorithm using randomness in two ways to incrementally add trees:
 
-- 1. By sub-sampling a random training set in the original training set as in bagging methods.
-- 2. By selecting a random subset of features on which performing tree splits for each choice of split.
+- By sub-sampling a random training set in the original training set as in bagging methods.
+- By selecting a random subset of features on which performing tree splits for each choice of split.
 
 The method is then showcased in simple classification tasks.
 
