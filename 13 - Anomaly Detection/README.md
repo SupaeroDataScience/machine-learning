@@ -12,31 +12,10 @@ An application exercise is also available:
 - <em>data/dataset.csv</em> : the dataset to be used to answer the questions
 
 
-### Option 1: Working with Google Colab
+### Working with Google Colab
 
-To follow the notebooks with Google Colab, simply go to https://colab.research.google.com/. Import a new notebook from GitHub, search for "jfabrice" and open one of the notebooks of this class (ml-class-anomaly-detection), for example anomaly_detection_class-empty.ipynb. Then click on "Copy to Drive" to be able to execute it. The first section of the notebook is there to initialize the environment from Google Colab.
+To follow the notebooks with Google Colab, simply go to:
+- For class follow-up: https://colab.research.google.com/github/SupaeroDataScience/machine-learning/blob/main/13%20-%20Anomaly%20Detection/anomaly_detection_class-empty.ipynb
+- For solutions: https://colab.research.google.com/github/SupaeroDataScience/machine-learning/blob/main/13%20-%20Anomaly%20Detection/anomaly_detection_class.ipynb
 
-
-### Option 2: Working locally - Setting up Anaconda environment
-
-To setup the Anaconda environment with required dependencies, execute the following instructions in Anaconda prompt or Linux shell.
-
-```shell
-# Clone this github repository on your machine
-git clone https://github.com/jfabrice/ml-class-anomaly-detection.git
-
-# Change working directory inside the repo
-cd ml-class-anomaly-detection
-
-# Create a new virtual environment
-conda create -n anomalydetectionenv python==3.6
-
-# Activate the environment
-## For Linux / MAC
-source activate anomalydetectionenv
-## For Windows
-activate anomalydetectionenv
-
-# Install the requirements
-pip install -r requirements.txt
-```
+Then click on "Copy to Drive" to be able to execute it and save your copy. The first section of the notebook is there to initialize the environment from Google Colab.

@@ -3,7 +3,12 @@
 * [Home](https://supaerodatascience.github.io/machine-learning/)
 * [Github repository](https://github.com/SupaeroDataScience/machine-learning/)
 
-TBA
+In this class, we will introduce Random Forest as a new boosting machine algorithm using randomness in two ways to incrementally add trees:
+
+- By sub-sampling a random training set in the original training set as in bagging methods.
+- By selecting a random subset of features on which performing tree splits for each choice of split.
+
+The method is then showcased in simple classification tasks.
 
 [Notebook](https://github.com/SupaeroDataScience/machine-learning/blob/main/12%20-%20Random%20Forests/Random%20Forests.ipynb)
 
