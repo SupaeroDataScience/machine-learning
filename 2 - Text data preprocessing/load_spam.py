@@ -1,7 +1,7 @@
 import os
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
-from nltk import wordpunct_tokenize          
+from nltk import wordpunct_tokenize
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 from nltk.corpus import words
@@ -34,7 +34,7 @@ class LemmaTokenizer(object):
         return [self.wnl.lemmatize(t) for t in word_list]
 
 class spam_data_loader:
-    def __init__(self): 
+    def __init__(self):
         self.train_dir = ''
         self.email_path = []
         self.email_label = []
@@ -51,6 +51,8 @@ class spam_data_loader:
             self.email_label = []
             for d in os.listdir(self.train_dir):
                 folder = os.path.join(self.train_dir,d)
+                if ".DS_Store" in d:
+                    continue
                 self.email_path += [os.path.join(folder,f) for f in os.listdir(folder)]
                 self.email_label += [f[0:3]=='spm' for f in os.listdir(folder)]
         # Vectorize emails
