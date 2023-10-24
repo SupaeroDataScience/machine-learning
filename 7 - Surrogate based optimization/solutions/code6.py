@@ -3,7 +3,8 @@
 
 def EI(GP,points,f_min):
     pred_mu = GP.predict_values(points)
-    pred_sig = GP.predict_variances(points)
+    var = GP.predict_variances(points)
+    pred_sig = np.sqrt(var)
     args0 = (f_min - pred_mu)/np.atleast_2d(pred_sig).T
     args1 = (f_min - pred_mu)*norm.cdf(args0)
     args2 = np.atleast_2d(pred_sig).T*norm.pdf(args0)
