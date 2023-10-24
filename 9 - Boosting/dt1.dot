@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<x<SUB>0</SUB> &le; 4.393<br/>entropy = 1.0<br/>samples = 600<br/>value = [296, 304]>, fillcolor="#fafcfe"] ;
+1 [label=<x<SUB>1</SUB> &le; 4.361<br/>entropy = 0.992<br/>samples = 551<br/>value = [247, 304]>, fillcolor="#daedfa"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<x<SUB>1</SUB> &le; 1.7<br/>entropy = 0.968<br/>samples = 501<br/>value = [198, 303]>, fillcolor="#baddf6"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.92<br/>samples = 200<br/>value = [133, 67]>, fillcolor="#f2c09d"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.753<br/>samples = 301<br/>value = [65, 236]>, fillcolor="#70b8ec"] ;
+2 -> 4 ;
+5 [label=<x<SUB>0</SUB> &le; -0.661<br/>entropy = 0.141<br/>samples = 50<br/>value = [49, 1]>, fillcolor="#e6843d"] ;
+1 -> 5 ;
+6 [label=<entropy = 0.0<br/>samples = 1<br/>value = [0, 1]>, fillcolor="#399de5"] ;
+5 -> 6 ;
+7 [label=<entropy = 0.0<br/>samples = 49<br/>value = [49, 0]>, fillcolor="#e58139"] ;
+5 -> 7 ;
+8 [label=<entropy = 0.0<br/>samples = 49<br/>value = [49, 0]>, fillcolor="#e58139"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
