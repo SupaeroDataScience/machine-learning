@@ -5,7 +5,7 @@ spam_dt = tree.DecisionTreeClassifier(criterion='entropy', max_depth=20, min_sam
 spam_dt.fit(Xtrain,ytrain)
 
 print("score:", spam_dt.score(Xtest,ytest))
-disp_tree('spam_dt',spam_dt)
+tree.plot_tree(spam_dt)
 
 # Compute cross-validation score
 nb_trials = 30
