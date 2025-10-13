@@ -7,6 +7,8 @@ IC = 'EI'
 
 plt.ioff()
 x_data = np.atleast_2d([0,7,25]).T
+ndoe= np.shape(x_data)[0]
+print("Ndoe init", ndoe)
 y_data = fun(x_data)
 
 
@@ -39,7 +41,7 @@ for k in range(n_iter):
     y_data = np.atleast_2d(np.append(y_data,y_et_k)).T
     x_data = np.atleast_2d(np.append(x_data,x_et_k)).T
     
-    print(x_data[k+3],y_data[k+3])
+    print(x_data[k+ndoe],y_data[k+ndoe,0])
     Y_GP_plot_mean = sm.predict_values(X_plot)
     Y_GP_plot_var = sm.predict_variances(X_plot) 
     Y_EI_plot = obj_k(X_plot)
@@ -52,8 +54,8 @@ for k in range(n_iter):
         ax1 = ax.twinx()
         ei, = ax1.plot(X_plot,Y_EI_plot,color='red')
     true_fun, = ax.plot(X_plot,Y_plot)
-    data, = ax.plot(x_data[0:k+3],y_data[0:k+3],linestyle='',marker='o',color='orange')
-    opt, = ax.plot(x_data[k+3],y_data[k+3],linestyle='',marker='*',color='r')
+    data, = ax.plot(x_data[0:k+ndoe],y_data[0:k+ndoe,0],linestyle='',marker='o',color='orange')
+    opt, = ax.plot(x_data[k+ndoe],y_data[k+ndoe,0],linestyle='',marker='*',color='r')
     gp, = ax.plot(X_plot,Y_GP_plot_mean,linestyle='--',color='g') 
     un_gp  = ax.fill_between(X_plot.T[0], np.ravel(Y_GP_plot_mean-3*np.sqrt(Y_GP_plot_var)), np.ravel(Y_GP_plot_mean+3*np.sqrt(Y_GP_plot_var)),alpha=0.3,color='g')
     lines = [true_fun,data,gp,un_gp,opt,ei]
