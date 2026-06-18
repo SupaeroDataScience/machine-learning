@@ -10,11 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://supaerodatascience.github.io/machine-learning/xai.html">
+        <link rel="canonical" href="https://supaerodatascience.github.io/machine-learning/probabilistic.html">
       
       
-        <link rel="prev" href="commitee.html">
+        <link rel="prev" href="geometric.html">
       
+      
+        <link rel="next" href="commitee.html">
       
       
         
@@ -25,7 +27,7 @@
     
     
       
-        <title>Explainability in ML - SDD</title>
+        <title>A probabilistic approach to ML - SDD</title>
       
     
     
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#explainability-of-ml-algorithms" class="md-skip">
+        <a href="#a-probabilistic-approach-to-ml" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Explainability in ML
+              A probabilistic approach to ML
             
           </span>
         </div>
@@ -520,10 +522,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="probabilistic.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A probabilistic approach to ML
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="probabilistic.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -539,6 +568,65 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#naive-bayes-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Naive Bayes Classification
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gaussian-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gaussian Processes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gaussian Processes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#surrogate-modeling-and-bayesian-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Surrogate Modeling and Bayesian Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -576,19 +664,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="xai.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="xai.html" class="md-nav__link">
         
   
   
@@ -604,7 +683,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -964,6 +1042,53 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#naive-bayes-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Naive Bayes Classification
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gaussian-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gaussian Processes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gaussian Processes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#surrogate-modeling-and-bayesian-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Surrogate Modeling and Bayesian Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -982,19 +1107,34 @@
   
 
 
-<h1 id="explainability-of-ml-algorithms">Explainability of ML algorithms<a class="headerlink" href="#explainability-of-ml-algorithms" title="Permanent link">🔗</a></h1>
-<p>This class covers the theoretical concepts of explainability in machine learning, as well as their practical implementation. It is divided in 2 steps: </p>
-<ol>
-<li>An overview of the concepts behind explainability of machine learning algorithms (the beginning of explainability, its use in multiple sectors by multiple stakeholders, the tradeoff between performance and explainability, the difference between local and global explainability as well as illustrative use cases from the real world).</li>
-<li>A deep dive on explainability methods (based on a notebook) where the LIME and SHAP methods are introduced and illustrated through 3 examples:  <ul>
-<li>LIME for text based on a news article classification algorithm</li>
-<li>LIME for images based on an InceptionV3 model</li>
-<li>SHAP for tabular data based on an XGBoost model used to predict the winner team during a League of Legends game</li>
+<h1 id="a-probabilistic-approach-to-ml">A probabilistic approach to ML<a class="headerlink" href="#a-probabilistic-approach-to-ml" title="Permanent link">🔗</a></h1>
+<h2 id="naive-bayes-classification">Naive Bayes Classification<a class="headerlink" href="#naive-bayes-classification" title="Permanent link">🔗</a></h2>
+<p>This class provides a gentle introduction to the Bayesian approach to Supervised Learning. We will consider the question of estimating the distribution of a label <span class="arithmatex">\(y\)</span> given an input <span class="arithmatex">\(x\)</span> and some data. A first, very naive way to tackle this problem will involve a strong hypothesis of conditional independence, which we will call the naive Bayes assumption. This will open the door to the method of Naive Bayes Classification.</p>
+<p><a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/5%20-%20Naive%20Bayes%20Classification/Naive%20Bayes%20Classification.ipynb">Notebook</a> (<a href="https://colab.research.google.com/github/SupaeroDataScience/machine-learning/blob/main/5%20-%20Naive%20Bayes%20Classification/Naive%20Bayes%20Classification.ipynb">colab</a>)</p>
+<p><a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/5%20-%20Naive%20Bayes%20Classification/Refresher%20exercice/prep_NBC.pdf">Pre-class refresher activities</a> and <a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/5%20-%20Naive%20Bayes%20Classification/Refresher%20exercice/prep_NBC-corr.pdf">solution</a><br />
+<a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/5%20-%20Naive%20Bayes%20Classification/pres.pdf">Summary card</a><br />
+<a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/5%20-%20Naive%20Bayes%20Classification/Lecture%20notes/lecture_notes_NBC.pdf">Lecture notes</a>  </p>
+<p><strong>References</strong></p>
+<ul>
+<li><strong>Exploring conditions for the optimality of naive Bayes.</strong><br />
+Zhang, H. <em>International Journal of Pattern Recognition and Artificial Intelligence</em>, <strong>19</strong>(02), 183-198, (2005).  </li>
 </ul>
-</li>
-</ol>
-<p><a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/14%20-%20Explainability/Notebook_explainability_students_version.ipynb">Notebook</a> (<a href="https://colab.research.google.com/github/SupaeroDataScience/machine-learning/blob/main/14%20-%20Explainability/Notebook_explainability_students_version.ipynb">colab</a>)</p>
-<p><a href="https://colab.research.google.com/github/SupaeroDataScience/machine-learning/blob/main/14%20-%20Explainability/solution/Notebook_explainability.ipynb">Notebook with solutions</a> (<a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/14%20-%20Explainability/solution/Notebook_explainability.ipynb">colab</a>)</p>
+<h2 id="gaussian-processes">Gaussian Processes<a class="headerlink" href="#gaussian-processes" title="Permanent link">🔗</a></h2>
+<p>This class continues our exploration of the Bayesian approach to Machine Learning. Departing from the question of estimating <span class="arithmatex">\(P(y|x)\)</span> and the hypothesis that a set of observations <em>y</em> is distributed as a Gaussian vector around its meand, we shall see how we can derive an explicit form for the distribution of <span class="arithmatex">\(y|x\)</span>. This explicit form will be called a Gaussian Process and will provide us with the likelihood that each possible function fits our data. In turn, this will provide an elegant and efficient way to estimate the most likely output <span class="arithmatex">\(y\)</span> for a given <span class="arithmatex">\(x\)</span> but also the confidence interval around this prediction.</p>
+<p><a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/6%20-%20Gaussian%20Processes/Gaussian%20Processes.ipynb">Notebook</a> (<a href="https://colab.research.google.com/github/SupaeroDataScience/machine-learning/blob/main/6%20-%20Gaussian%20Processes/Gaussian%20Processes.ipynb">colab</a>)</p>
+<p><a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/5%20-%20Naive%20Bayes%20Classification/Refresher%20exercice/prep_NBC.pdf">Pre-class refresher activities</a> and <a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/5%20-%20Naive%20Bayes%20Classification/Refresher%20exercice/prep_NBC-corr.pdf">solution</a><br />
+<a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/6%20-%20Gaussian%20Processes/pres.pdf">Summary card</a>  </p>
+<p><strong>References</strong></p>
+<ul>
+<li><strong>Gaussian Processes in Machine Learning.</strong><br />
+C. E. Rasmussen and C. K. I. Williams.  <em>MIT press</em>, 2005.<br />
+Available for download at http://www.gaussianprocess.org/gpml.</li>
+</ul>
+<h3 id="surrogate-modeling-and-bayesian-optimization">Surrogate Modeling and Bayesian Optimization<a class="headerlink" href="#surrogate-modeling-and-bayesian-optimization" title="Permanent link">🔗</a></h3>
+<p>This practical session explores the use of Gaussian Processes in order to estimate a given physics phenomenon, say  forces and torques on an aircraft's wing. Such a model is called a <em>surrogate model</em> of the actual phenomenon. This surrogate model is then used to optimize the mechanical characteristics of the airfoil, without resorting to costly numerical simulations or experiments. We explore methods for Bayesian optimization using surrogate models in the last part of the class.</p>
+<p><a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/7%20-%20Surrogate%20based%20optimization/MOO_SEGOMOE_ISAE_nov2023_eleves.pdf">Presentation</a><br />
+<a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/7%20-%20Surrogate%20based%20optimization/GP%20regression.ipynb">Notebook</a> (<a href="https://colab.research.google.com/github/SupaeroDataScience/machine-learning/blob/main/7%20-%20Surrogate%20based%20optimization/GP%20regression.ipynb">colab</a>)<br />
+<a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/7%20-%20Surrogate%20based%20optimization/SITESDD.zip">Archive of notebook and solution files</a>  </p>
 
 
 

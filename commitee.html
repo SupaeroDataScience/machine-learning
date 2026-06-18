@@ -10,11 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://supaerodatascience.github.io/machine-learning/xai.html">
+        <link rel="canonical" href="https://supaerodatascience.github.io/machine-learning/commitee.html">
       
       
-        <link rel="prev" href="commitee.html">
+        <link rel="prev" href="probabilistic.html">
       
+      
+        <link rel="next" href="xai.html">
       
       
         
@@ -25,7 +27,7 @@
     
     
       
-        <title>Explainability in ML - SDD</title>
+        <title>Commitee-based methods - SDD</title>
       
     
     
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#explainability-of-ml-algorithms" class="md-skip">
+        <a href="#commitee-based-methods" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Explainability in ML
+              Commitee-based methods
             
           </span>
         </div>
@@ -548,10 +550,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="commitee.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commitee-based methods
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="commitee.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -567,6 +596,109 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#decision-trees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision trees
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boosting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Boosting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gradient-boosting-and-xgboost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gradient Boosting and XGBoost
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bagging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bagging
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#random-forests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Random Forests
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anomaly-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anomaly detection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anomaly detection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements-for-local-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements for local installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -576,19 +708,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="xai.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="xai.html" class="md-nav__link">
         
   
   
@@ -604,7 +727,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -964,6 +1086,97 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#decision-trees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision trees
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boosting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Boosting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gradient-boosting-and-xgboost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gradient Boosting and XGBoost
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bagging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bagging
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#random-forests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Random Forests
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anomaly-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anomaly detection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anomaly detection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements-for-local-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements for local installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -982,19 +1195,119 @@
   
 
 
-<h1 id="explainability-of-ml-algorithms">Explainability of ML algorithms<a class="headerlink" href="#explainability-of-ml-algorithms" title="Permanent link">🔗</a></h1>
-<p>This class covers the theoretical concepts of explainability in machine learning, as well as their practical implementation. It is divided in 2 steps: </p>
-<ol>
-<li>An overview of the concepts behind explainability of machine learning algorithms (the beginning of explainability, its use in multiple sectors by multiple stakeholders, the tradeoff between performance and explainability, the difference between local and global explainability as well as illustrative use cases from the real world).</li>
-<li>A deep dive on explainability methods (based on a notebook) where the LIME and SHAP methods are introduced and illustrated through 3 examples:  <ul>
-<li>LIME for text based on a news article classification algorithm</li>
-<li>LIME for images based on an InceptionV3 model</li>
-<li>SHAP for tabular data based on an XGBoost model used to predict the winner team during a League of Legends game</li>
-</ul>
+<h1 id="commitee-based-methods">Commitee-based methods<a class="headerlink" href="#commitee-based-methods" title="Permanent link">🔗</a></h1>
+<h2 id="decision-trees">Decision trees<a class="headerlink" href="#decision-trees" title="Permanent link">🔗</a></h2>
+<p>This class introduces the concept of <strong>decision trees</strong> as supervized learning methods for classification and regression.
+A decision tree is a simple model that can even be visualized and understood by a human after training.
+It consists in a graph with a "tree" structure, meaning that there exists a root node with a pair of child nodes, themself having pairs of child nodes, etc., until some leaf nodes.
+The way data are processed by the model is by flowing through the nodes until reaching a leaf, that corresponds to a class or a value.
+At each node, a "split" was created at training time, testing some features of the data point.
+The binary outcome of the test determines whether the next node seen by the data will be the first or the second child of the current node.</p>
+<p><a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/8%20-%20Decision%20trees/Decision%20Trees.ipynb">Notebook</a></p>
+<p><strong>References</strong></p>
+<ul>
+<li>
+<p><a href="https://scikit-learn.org/stable/modules/tree.html#tree">Scikit-learn documentation on decision trees</a></p>
 </li>
-</ol>
-<p><a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/14%20-%20Explainability/Notebook_explainability_students_version.ipynb">Notebook</a> (<a href="https://colab.research.google.com/github/SupaeroDataScience/machine-learning/blob/main/14%20-%20Explainability/Notebook_explainability_students_version.ipynb">colab</a>)</p>
-<p><a href="https://colab.research.google.com/github/SupaeroDataScience/machine-learning/blob/main/14%20-%20Explainability/solution/Notebook_explainability.ipynb">Notebook with solutions</a> (<a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/14%20-%20Explainability/solution/Notebook_explainability.ipynb">colab</a>)</p>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Decision_tree_learning">Wikipedia on decision tree learning</a></p>
+</li>
+<li>
+<p><a href="https://web.stanford.edu/~hastie/Papers/ESLII.pdf">T. Hastie, R. Tibshirani and J. Friedman. Elements of Statistical Learning, Springer, 2009.</a></p>
+</li>
+</ul>
+<h2 id="boosting">Boosting<a class="headerlink" href="#boosting" title="Permanent link">🔗</a></h2>
+<p>In this class, we introduce the principle of boosting, which can be seen as an incremental way to build a "strong" classifier with "weak" classifiers. As is, this technic is an ensemble method. More specifically, the "weak" classifiers are added sequentially, so that the new model compensates the flaws of the ensemble composed of the previous models.
+Further, we introduce the gradient boosting boosting as a generalization of boosting but using gradients for the incremental addition of models.</p>
+<p><a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/9%20-%20Boosting/Boosting.ipynb">Notebook</a></p>
+<p><strong>References</strong></p>
+<ul>
+<li><a href="https://www.cs.princeton.edu/courses/archive/spr07/cos424/papers/boosting-survey.pdf">The Boosting Approach to Machine Learning An Overview. R. E. Schapire. MSRI workshop on Nonlinear Estimation and Classification, (2002).</a></li>
+</ul>
+<h2 id="gradient-boosting-and-xgboost">Gradient Boosting and XGBoost<a class="headerlink" href="#gradient-boosting-and-xgboost" title="Permanent link">🔗</a></h2>
+<p>In this class, you will learn to use the XGBoost library, which efficiently implements gradient boosting algorithms.</p>
+<p>This Practice Course is composed of 3 parts - each part is meant to be done in about 1 hour :
+* In the <strong>first notebook</strong>, you will learn the <strong>basic of XGBoost</strong>, how to apply it on a dataset and tune it to obtain the best performances.
+* In the <strong>second notebook</strong>, we will focus on <strong>ensemble methods</strong> and explain what makes XGBoost different from other models.
+* Finally in the <strong>last notebook</strong> you will see how the choice of hyperparameters is a key element of a tradeoff between <strong>Bias and Variance</strong>.</p>
+<p><a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/10%20-%20Gradient%20Boosting/01%20-%20Introduction%20to%20XGBoost.ipynb">Notebook 1: Introduction to XGBoost</a></p>
+<p><a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/10%20-%20Gradient%20Boosting/02%20-%20XGBoost%20and%20ensemble%20models.ipynb">Notebook 2: XGBoost and ensemble models</a></p>
+<p><a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/10%20-%20Gradient%20Boosting/03%20-%20Regularization.ipynb">Notebook 3: Regularization</a></p>
+<p><strong>References</strong></p>
+<ul>
+<li><a href="https://xgboost.readthedocs.io/en/latest/">XGBoost</a></li>
+</ul>
+<h2 id="bagging">Bagging<a class="headerlink" href="#bagging" title="Permanent link">🔗</a></h2>
+<p>In this class, we will introduce the bootstrap method and its application to learning a predictor called Bagging (Bootstrap AGGregatING). First we review bootstrap in statistics as a method to estimate the variance of an estimator on any statistic of a random variable (e.g. its mean). Then we extend this notion to machine learning, i.e., to learning a predictor for regression or classification. We discuss the pros and cons of bagging.</p>
+<p><a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/11%20-%20Bagging/Bagging.ipynb">Notebook</a></p>
+<p><strong>References</strong></p>
+<ul>
+<li>
+<p><a href="http://www.ru.ac.bd/stat/wp-content/uploads/sites/25/2019/03/501_02_Efron_Introduction-to-the-Bootstrap.pdf">An Introduction to the Bootstrap. B. Efron and R. Tibshirani, Chapman &amp; Hall/CRC, (1993).</a></p>
+</li>
+<li>
+<p><a href="https://arxiv.org/abs/1411.5279">What Teachers Should Know About the Bootstrap: Resampling in the Undergraduate Statistics Curriculum. T. C. Hesterberg, The American Statistician, 69(4), 371–386, (2015).</a></p>
+</li>
+</ul>
+<h2 id="random-forests">Random Forests<a class="headerlink" href="#random-forests" title="Permanent link">🔗</a></h2>
+<p>In this class, we will introduce Random Forest as a new boosting machine algorithm using randomness in two ways to incrementally add trees:</p>
+<ul>
+<li>By sub-sampling a random training set in the original training set as in bagging methods.</li>
+<li>By selecting a random subset of features on which performing tree splits for each choice of split.</li>
+</ul>
+<p>The method is then showcased in simple classification tasks.</p>
+<p><a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/12%20-%20Random%20Forests/Random%20Forests.ipynb">Notebook</a></p>
+<p><strong>References</strong></p>
+<ul>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Random_forest">Wikipedia page on Random Forest</a></p>
+</li>
+<li>
+<p><a href="https://www.stat.berkeley.edu/~breiman/randomforest2001.pdf">Random Forests. Breiman, Leo,  Machine learning 45.1 (2001): 5-32.</a></p>
+</li>
+<li>
+<p><a href="https://arxiv.org/pdf/1407.7502.pdf">Understanding random forests: From theory to practice. Louppe, Gilles, PhD thesis.</a></p>
+</li>
+</ul>
+<h2 id="anomaly-detection">Anomaly detection<a class="headerlink" href="#anomaly-detection" title="Permanent link">🔗</a></h2>
+<p>This class introduces the problem framing and methodology of Anomaly Detection. It illustrates why classical supervised ML algorithms are not suitable for such problems, and provides new approaches with outlier detection and novelty detection. You will discover, by alternating theory and practice exercises, the major algorithms, principles and warning signs for such tasks, including One-Class SVMs, Local Outlier Factor or Isolation Forest. You will also discover semi-supervised approaches where the error of supervised learning models can turn into anomaly scores.
+At the end, a practical use case with anonymized aircraft sensor data is proposed, where you will have to develop the whole methodology without guidance. It will help you reflect on the main stakes and warning points of such tasks, to prepare you to address customers in your professional life.</p>
+<p><a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/13%20-%20Anomaly%20Detection/anomaly_detection_class.pdf">Lecture notes</a><br />
+<a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/13%20-%20Anomaly%20Detection/anomaly_detection_class-empty.ipynb">Notebook for class exercises</a> (<a href="https://colab.research.google.com/github/SupaeroDataScience/machine-learning/blob/main/13%20-%20Anomaly%20Detection/anomaly_detection_class-empty.ipynb">colab</a>)<br />
+<a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/13%20-%20Anomaly%20Detection/anomaly_detection_class.ipynb">Solutions</a> (<a href="https://colab.research.google.com/github/SupaeroDataScience/machine-learning/blob/main/13%20-%20Anomaly%20Detection/anomaly_detection_class.ipynb">colab</a>)</p>
+<p><a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/13%20-%20Anomaly%20Detection/anomaly_detection_exercise.pdf">Practical use case instructions</a><br />
+<a href="https://github.com/SupaeroDataScience/machine-learning/blob/main/13%20-%20Anomaly%20Detection/data/dataset.csv">Data for use case</a></p>
+<h3 id="requirements-for-local-installation">Requirements for local installation<a class="headerlink" href="#requirements-for-local-installation" title="Permanent link">🔗</a></h3>
+<p>To setup the Anaconda environment with required dependencies, execute the following instructions in Anaconda prompt or Linux shell.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Clone this github repository on your machine</span>
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/jfabrice/ml-class-anomaly-detection.git
+
+<span class="c1"># Change working directory inside the repo</span>
+<span class="nb">cd</span><span class="w"> </span>ml-class-anomaly-detection
+
+<span class="c1"># Create a new virtual environment</span>
+conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>anomalydetectionenv<span class="w"> </span><span class="nv">python</span><span class="o">==</span><span class="m">3</span>.6
+
+<span class="c1"># Activate the environment</span>
+<span class="c1">## For Linux / MAC</span>
+<span class="nb">source</span><span class="w"> </span>activate<span class="w"> </span>anomalydetectionenv
+<span class="c1">## For Windows</span>
+activate<span class="w"> </span>anomalydetectionenv
+
+<span class="c1"># Install the requirements</span>
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</code></pre></div>
+<p><strong>References</strong></p>
+<ul>
+<li><strong>A Fast Algorithm for the Minimum Covariance Determinant Estimator.</strong><br />
+P. J. Rousseeuw, and K. V. Driessen. Technometrics, <strong>41</strong>(3), 212-223, (1999).  </li>
+<li><strong>Estimating the support of a high-dimensional distribution.</strong><br />
+B. Schölkopf, J. C. Platt, J. Shawe-Taylor, A. J. Smola, and R. C. Williamson. Neural computation, <strong>13</strong>(7), 1443-1471, (2001).  </li>
+<li><strong>Isolation-based anomaly detection.</strong><br />
+F. T. Liu, K. M. Ting, and Z. H. Zhou. ACM Transactions on Knowledge Discovery from Data, <strong>6</strong>(1), 1-39, (2012).  </li>
+<li><strong>LOF: identifying density-based local outliers.</strong><br />
+M. M. Breunig, H. P. Kriegel, R. T. Ng, and J. Sander. In ACM SIGMOD International Conference on Management of Data, 93-104, (2000).  </li>
+</ul>
 
 
 
