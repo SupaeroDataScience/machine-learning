@@ -36,20 +36,8 @@ T. Hastie, R. Tibshirani, J. Friedman.
 Springer Series in Statistics.  
 [https://web.stanford.edu/~hastie/ElemStatLearn/](https://web.stanford.edu/~hastie/ElemStatLearn/)  
 
-## Introduction
---8<--
-docs/intro.md
---8<--
-
-### A quick tour of Unsupervised Learning
---8<--
-docs/unsup.md
---8<--
 
 
-### The importance of data pre-processing
---8<--
-docs/preproc.md
---8<--
+
 
 
