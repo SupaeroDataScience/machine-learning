@@ -54,6 +54,9 @@ markdown_extensions:
 - attr_list
 - pymdownx.details
 - pymdownx.superfences
+- pymdownx.snippets:
+    check_paths: true
+    auto_append: []
 
 plugins:
 - search
