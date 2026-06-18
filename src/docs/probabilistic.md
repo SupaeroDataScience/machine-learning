@@ -14,7 +14,7 @@ docs/nbc.md
 docs/gp.md
 --8<--
 
-### Surrogate Modeling and Bayesian Optimization
+## Surrogate Modeling and Bayesian Optimization
 --8<--
 docs/surrog.md
 --8<--
