@@ -1,4 +1,4 @@
-# A geometric approach to ML
+# A geometrical approach to ML
 
 
 
