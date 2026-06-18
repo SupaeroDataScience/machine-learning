@@ -1,8 +1,5 @@
 # Explainability of ML algorithms
 
-* [Home](https://supaerodatascience.github.io/machine-learning/)
-* [Github repository](https://github.com/SupaeroDataScience/machine-learning/)
-
 This class covers the theoretical concepts of explainability in machine learning, as well as their practical implementation. It is divided in 2 steps: 
 
 1. An overview of the concepts behind explainability of machine learning algorithms (the beginning of explainability, its use in multiple sectors by multiple stakeholders, the tradeoff between performance and explainability, the difference between local and global explainability as well as illustrative use cases from the real world).
