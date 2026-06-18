@@ -1,7 +1,3 @@
-# Gradient Boosting and XGBoost
-
-* [Home](https://supaerodatascience.github.io/machine-learning/)
-* [Github repository](https://github.com/SupaeroDataScience/machine-learning/)
 
 In this class, you will learn to use the XGBoost library, which efficiently implements gradient boosting algorithms.
 
@@ -16,6 +12,6 @@ This Practice Course is composed of 3 parts - each part is meant to be done in a
 
 [Notebook 3: Regularization](https://github.com/SupaeroDataScience/machine-learning/blob/main/10%20-%20Gradient%20Boosting/03%20-%20Regularization.ipynb)
 
-## References
+**References**
 
-[XGBoost](https://xgboost.readthedocs.io/en/latest/)
+- [XGBoost](https://xgboost.readthedocs.io/en/latest/)
