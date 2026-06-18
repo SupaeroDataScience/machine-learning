@@ -28,7 +28,7 @@ nav:
   - Machine Learning: 
     - Overview: https://supaerodatascience.github.io/aml.html
     - Machine Learning: 
-      - Introduction: intro.md
+      - Introduction: index.md
       - A geometrical approach to ML: geometric.md
       - A probabilistic approach to ML: probabilistic.md
       - Commitee-based methods: commitee.md
