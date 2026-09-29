@@ -1,6 +1,5 @@
 ### WRITE YOUR CODE HERE
 # If you get stuck, uncomment the line above to load a correction in this cell (then you can execute this code).
-
 def EI(GP,points,f_min):
     pred_mu = GP.predict_values(points)
     var = GP.predict_variances(points)
