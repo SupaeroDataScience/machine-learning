@@ -1,4 +1,3 @@
-# %load solutions/code10.py
 ### WRITE YOUR CODE HERE
 # If you get stuck, uncomment the line above to load a correction in this cell (then you can execute this code).
 
